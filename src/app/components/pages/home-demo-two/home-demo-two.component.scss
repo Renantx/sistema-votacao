@@ -1,0 +1,53 @@
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    position: relative;
+    width: 60%;
+    margin: {
+        left: auto;
+        right: auto;
+    }
+    ;
+    .input-newsletter {
+        width: 80%;
+        display: block;
+        padding-left: 10px;
+        height: 30px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 14px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+        &::placeholder {
+            color: var(--paragraphColor);
+            transition: var(--transition);
+        }
+        &:focus {
+            &::placeholder {
+                color: transparent;
+            }
+        }
+    }
+    .default-btn-container {
+        text-align: center;
+        margin-top: 30px;
+        .default-btn {
+            border-radius: 5px;
+            height: 50px;
+            max-width: fit-content;
+            &::before {
+                border-radius: 5px;
+            }
+        }
+    }
+}

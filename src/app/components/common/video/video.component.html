@@ -1,0 +1,17 @@
+<div class="app-video-area pb-100">
+    <div class="container">
+        <div class="app-video-box">
+            <img src="assets/img/more-home/video/video.jpg" alt="video">
+            <button class="video-btn popup-video" (click)="ngxSmartModalService.getModal('popupTwo').open()"><i class="ri-play-line"></i></button>
+            <div class="shape">
+                <img class="shape-1" src="assets/img/more-home/video/shape-1.png" alt="shape1">
+                <img class="shape-2" src="assets/img/more-home/video/shape-2.png" alt="shape2">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="video-popup">
+    <ngx-smart-modal #popupTwo [identifier]="'popupTwo'">
+        <iframe src="https://www.youtube.com/embed/PWvPbGWVRrU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </ngx-smart-modal>
+</div>
