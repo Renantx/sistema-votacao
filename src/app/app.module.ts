@@ -153,6 +153,7 @@ import { KeyFeaturesComponent } from './components/common/key-features/key-featu
 import { HomenineBlogComponent } from './components/pages/home-demo-nine/homenine-blog/homenine-blog.component';
 import { FreeTrialStyleFourComponent } from './components/common/free-trial-style-four/free-trial-style-four.component';
 import { ClientReviewsStyleTwoComponent } from './components/common/client-reviews-style-two/client-reviews-style-two.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -310,6 +311,7 @@ import { ClientReviewsStyleTwoComponent } from './components/common/client-revie
     FormsModule,
     CountUpModule,
     AccordionModule,
+    HttpClientModule,
     CrystalLightboxModule
   ],
   providers: [],
